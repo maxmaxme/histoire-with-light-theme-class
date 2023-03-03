@@ -88,10 +88,10 @@ app.mount('#app')
 
 watch(isDark, value => {
   if (value) {
-    document.documentElement.classList.add(histoireConfig.sandboxDarkClass) // @TODO remove
     document.documentElement.classList.add(histoireConfig.theme.darkClass)
+    document.documentElement.classList.remove(histoireConfig.theme.lightClass)
   } else {
-    document.documentElement.classList.remove(histoireConfig.sandboxDarkClass) // @TODO remove
+    document.documentElement.classList.add(histoireConfig.theme.lightClass)
     document.documentElement.classList.remove(histoireConfig.theme.darkClass)
   }
 }, {

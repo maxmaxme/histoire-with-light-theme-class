@@ -132,6 +132,10 @@ export interface HistoireConfig {
      * Class added to the story preview when dark mode is enabled.
      */
     darkClass?: string
+    /**
+     * Class added to the story preview when light mode is enabled.
+     */
+    lightClass?: string
   }
   /**
    * Setup file exporting a default function executed when setting up each story preview.

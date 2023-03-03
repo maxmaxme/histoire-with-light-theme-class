@@ -17,6 +17,7 @@ export default defineConfig({
   // autoApplyContrastColor: true,
   // routerMode: 'hash',
   theme: {
+    lightClass: 'my-light',
     darkClass: 'my-dark',
   },
 })
